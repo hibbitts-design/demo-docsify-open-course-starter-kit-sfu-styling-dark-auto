@@ -27,7 +27,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@5/dist/themes/core.min.css" />
 
   <!-- Core Dark (add-on) -->
-  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@5/dist/themes/addons/core-dark.min.css" media="(prefers-color-scheme: dark)"/> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@5/dist/themes/addons/core-dark.min.css" media="(prefers-color-scheme: dark)"/>
 
   <link rel="stylesheet" href="assets/css/theme.css" id="theme-css">
   <link rel="stylesheet" href="assets/css/print.css" media="print">
@@ -46,7 +46,7 @@
   <div id="app"></div>
   <script>
     // Enter the URL of your own GitHub Repository in between the two quotes below
-    var gitLinkRepoURL = 'https://github.com/hibbitts-design/demo-docsify-open-course-starter-kit';
+    var gitLinkRepoURL = 'https://github.dev/paulhibbitts/test-docsify-open-course-starter-kit';
 
     // Customize the text for your Edit this Page on GitHub link between the two quotes below
     var editThisPageLinkText = 'Edit this Page';
@@ -176,18 +176,18 @@
             htmlElement.innerHTML = html;
 
             /* JS to change Embedly cards to light or dark theme based on system setting when using the light + dark theme (uncomment to use) */
-            /*
+
             const embeds = Array.from(htmlElement.querySelectorAll('.embedly-card'))
             if (!(embeds.length === 0)) {
                if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)  {
                   // dark mode
-                  // console.log("dark");
+                  console.log("dark");
                   embeds.forEach(embed => {
                     embed.setAttribute('data-card-theme', 'dark');
                   });
                   } else {
                   // light mode
-                  // console.log("light");
+                  console.log("light");
                   embeds.forEach(embed => {
                     embed.setAttribute('data-card-theme', 'light');
                   });
@@ -199,7 +199,7 @@
               });
 
             }
-            */
+
 
             next(htmlElement.innerHTML);
 
@@ -237,6 +237,15 @@
             document.querySelectorAll('img[data-src]').forEach(img => {
             img.src = window.resolveImagePath(img.dataset.src);
             });
+
+            var hasEmbedly = document.getElementsByClassName('embedly-card');
+            if (hasEmbedly.length > 0) {
+              // elements with class "embedly-card" exist
+              var script = document.createElement('script');
+              script.type = 'text/javascript';
+              script.src = 'https://cdn.embedly.com/widgets/platform.js';
+              document.head.appendChild(script);
+            }
 
             // Remove optional ToC area if full width header image is present
             var hasImageHeader = document.getElementsByClassName('header-image-full-width');
@@ -335,9 +344,6 @@
       document.write('<script src="https://cdn.jsdelivr.net/npm/docsify-toc@1.1.0/dist/toc.min.js"><\/script>');
     }
   </script>
-
-  <!-- Embedly JS -->
-  <script src="https://cdn.embedly.com/widgets/platform.js"></script>
 
   <!-- Additional Languages for Prismjs -->
   <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-bash.min.js"></script>
