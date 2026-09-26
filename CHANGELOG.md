@@ -10,6 +10,7 @@
 **Bugfix:**
 * Replaced icongr.am icons with Iconify API (Font Awesome 6)
 * Add top margin to tables and Mermaid diagrams so they don't sit flush against headings
+* Restore default `gitLinkRepoURL` to empty
 
 ## [v2.0.0](https://github.com/hibbitts-design/docsify-open-course-starter-kit/releases/tag/v2.0.0)
 ### 07/27/2026
