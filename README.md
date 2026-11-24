@@ -9,12 +9,23 @@
 
 > This is a starter kit to quickly create a Markdown-based open course site with the site generator [Docsify](https://docsify.js.org) (v5 Preview). Global navigation elements can be hidden for seamlessly embedding pages (i.e., into an LMS). Includes an optional "Edit this Page" link.
 
+**Rather skip GitHub Pages?** The same kind of site works with [Docsify-This](https://docsify-this.net), straight from your Markdown files in any public repo – start from its [Course Site template](https://github.com/hibbitts-design/docsify-this-multiple-page-course-site). Choose this kit when you want your own web address and full control of styling; a site started with Docsify-This moves to it as it is.
+
 Docsify sites draw their pages in the browser, with page addresses after a `#`, so search engines like Google, Bing, or DuckDuckGo index little more than the home page.
 
 📸 Docsify Open Course Screenshots
 ---
 ![ Docsify Open Course Starter Kit](https://raw.githubusercontent.com/paulhibbitts/github-repo-images/master/smartmockups_lzlzwwuj.png)
 _Figure 1. Docsify Open Course Starter Kit. Explore a demo at [hibbitts-design.github.io/demo-docsify-open-course-starter-kit/](https://hibbitts-design.github.io/demo-docsify-open-course-starter-kit/#/)_
+
+🗂 Variations
+---
+Each variation is built on this kit and is a template of its own – open its demo to see it, or start your own site from its template, as in the Quickstart below:
+
+- **Dark** – a dark theme · [Demo](https://hibbitts-design.github.io/demo-docsify-open-course-starter-kit-dark/) · [Template](https://github.com/hibbitts-design/demo-docsify-open-course-starter-kit-dark)
+- **Dark Mode Auto** – light or dark, following the reader's system setting · [Demo](https://hibbitts-design.github.io/demo-docsify-open-course-starter-kit-dark-mode-auto/) · [Template](https://github.com/hibbitts-design/demo-docsify-open-course-starter-kit-dark-mode-auto)
+- **SFU styling** – an institution's look, with its font and colours, to match its LMS · [Demo](https://hibbitts-design.github.io/demo-docsify-open-course-starter-kit-sfu/) · [Template](https://github.com/hibbitts-design/demo-docsify-open-course-starter-kit-sfu)
+- **SFU styling, dark** – the same look in a dark theme · [Demo](https://hibbitts-design.github.io/demo-docsify-open-course-starter-kit-sfu-styling-dark/) · [Template](https://github.com/hibbitts-design/demo-docsify-open-course-starter-kit-sfu-styling-dark)
 
 🚀 GitHub Pages Quickstart
 ---
